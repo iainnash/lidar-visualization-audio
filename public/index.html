@@ -1,0 +1,56 @@
+<html>
+<head>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.2/paper-full.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.1.1/Tone.js"></script>
+  <script type="text/javascript" src="client.js"></script>
+  <style>
+  .frame {
+    fill: none;
+    stroke: #000;
+  }
+
+  .axis text {
+    font: 10px sans-serif;
+  }
+
+  .axis line,
+  .axis circle {
+    fill: none;
+    stroke: #777;
+    stroke-dasharray: 1,4;
+  }
+
+  .axis :last-of-type circle {
+    stroke: #333;
+    stroke-dasharray: none;
+  }
+
+  .line {
+    fill: none;
+    stroke: red;
+    stroke-width: 1.5px;
+  }
+
+  #lines line {
+    stroke-width: 4;
+    stroke: red;
+  }
+  </style>
+</head>
+<body>
+  <button id="start">Start Scanning</button>
+  <button id="stop">Stop Scanning</button>
+  <button id="sound">Sound on</button>
+  <div>
+
+    <canvas id="paper" height="800" width="800">your browser needs to support canvas</canvas>
+
+    <h3>log</h3>
+    <div id="logInner">
+    </div>
+
+
+
+  </div>
+</body>
+</html>
