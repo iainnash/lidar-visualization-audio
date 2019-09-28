@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
+    "osc-js": "^2.0.4",
     "rplidar": "0.0.3",
     "schemapack": "^1.4.2",
     "ws": "^7.1.1"
