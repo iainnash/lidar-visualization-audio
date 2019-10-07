@@ -133,7 +133,6 @@ window.addEventListener("DOMContentLoaded", () => {
     new paper.Matrix(1, 0, 0, -1, paper.view.center.x, paper.view.center.y)
   );
   const lidarLines = new paper.Group();
-  const intersectionPoints = new paper.Group();
   const clearLines = () => {
     lidarLines.removeChildren();
   };
@@ -208,17 +207,6 @@ window.addEventListener("DOMContentLoaded", () => {
             parent: intersectionPoints
           });
         }
-        /*
-        soundBox.getIntersections(intersectionPoint).forEach(intersection => {
-          hasIntersection = true;
-          new paper.Path.Circle({
-            center: intersection.point,
-            radius: 2,
-            fillColor: "red",
-            parent: intersectionPoints
-          });
-        });
-        */
       });
       updatePlayer(hasIntersection, indx);
       soundBox.strokeColor = hasIntersection ? "black" : "orange";
